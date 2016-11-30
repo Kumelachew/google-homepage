@@ -1,0 +1,283 @@
+/*
+    Basic reset
+ */
+* {
+    margin: 0; padding: 0;
+  }
+body, p, a {
+  font-family: arial,sans-serif;
+}
+
+.google {
+  max-width:50%;
+  min-width:980px;
+  max-height:500px;
+  min-height:21%;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+}
+
+/*
+    stop top menu and footer from moving when the screen is less than 900px
+  */
+@media only screen and (max-width: 980px) {
+    .menu {
+      max-width:50%;
+      min-width:980px;
+    }
+    .footer {
+      max-width:50%;
+      min-width:980px;
+    }
+}
+
+.menu ul {
+  position: relative;
+  right: 20px;
+  height: 50px;
+  float: right;
+}
+.menu ul li {
+  list-style: none;
+  position: relative;
+  top: 10px;
+  float: left;
+  padding: 10px 0px 10px 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-size: 13px;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/*
+    create the apps icon
+ */
+.google-apps-icon {
+  position: relative;
+  height: 21px;
+  width: 21px;
+}
+
+.app-small-box {
+  position: relative;
+  width: 4px;
+  height: 4px;
+  float: left;
+  margin: 1px;
+  background-color: #666666;
+}
+
+/*
+    create the sign-in button
+ */
+.sign-in-button {
+  position: relative;
+  top: -5px;
+  width: 70px;
+  height: 28px;
+  border: 1px solid #4387FB;
+  border-radius: 2px;
+  background: #4387FB;
+}
+
+.sign-in-button a {
+  color: white !important;
+  font-weight: bold;
+  position: relative;
+  left: 13px;
+  top: 5px;
+}
+
+/*
+    style the google logo image
+ */
+img {
+  position: relative;
+  display: block;
+  left: 390px;
+  padding-top: 197px;
+  height: 92px;
+  width: 272px !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*
+    create the search textbox
+ */
+.search-textbox-container {
+  position: relative;
+  border: 1px solid #B9B9B9;
+  width: 450px;
+  height: 40px;
+  margin: auto auto;
+  margin-top: 20px;
+  left: 30px;
+}
+
+.search-textbox-container:active,
+.search-textbox-container:hover {
+  border: 1px solid #4d90fe;
+}
+
+
+.search-box {
+  position: relative;
+  width: 400px;
+  height: 30px;
+  top: 5px;
+  left: 10px;
+  outline: none;
+}
+.search-box input:focus {
+  outline: none;
+}
+
+.search-textbox {
+  position: relative;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 6;
+  right: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+.google-microphone-icon {
+  background: url(google-microphone.png) no-repeat -3px 0;
+  background-size: 24px 24px;
+  display: inline-block;
+  height: 23px;
+  width: 17px;
+  float: right;
+  margin-right: 10px;
+  margin-top: -23px;
+}
+
+/*
+    style the google search and i'm feeling lucky button
+ */
+.search-texts {
+  position: relative;
+  display: flex;
+  flex-direction: left ;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  top: 20px;
+}
+
+.search-texts div:hover {
+  box-sizing:border-box;    /* fixes bottom elements not to be pushed */
+  border: 1px solid #B9B9B9;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.search-texts div a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  color: #7f7f7f;
+}
+
+.search-texts div a:hover {
+  color: #000;
+}
+
+.google-search-btn {
+  position: relative;
+  width: 126px;
+  height: 36px;
+  background-color: #F7F7F7;
+  border-radius: 3px;
+  right: 5px;
+}
+
+.google-search-btn a {
+  position: relative;
+  top: 7px;
+  left: 17px;
+}
+
+.im-feeling-lucky-btn {
+  position: relative;
+  width: 126px;
+  height: 36px;
+  background-color: #F7F7F7;
+  border-radius: 3px;
+  left: 5px;
+}
+
+.im-feeling-lucky-btn a {
+  position: relative;
+  top: 7px;
+  left: 10px;
+}
+
+/*
+    style the enjoy Cyber Monday deals from the Google Store text
+ */
+
+.more-info-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 15px;
+  left: 20px;
+}
+
+.more-info-text p {
+  font-size: 13px;
+}
+
+/*
+    footer
+ */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid #E4E4E4;
+  border-bottom: none;
+  background: #F2F2F2;
+  height: 40px;
+}
+
+.footer div ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer div ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #666666;
+}
+
+.footer div ul li a:hover {
+  text-decoration: underline;
+}
+
+.left-footer ul li {
+  float: left;
+  margin-left: 30px;
+}
+.right-footer ul li {
+  float: right;
+  margin-right: 30px;
+}
+
+
