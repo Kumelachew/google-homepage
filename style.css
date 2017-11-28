@@ -20,7 +20,7 @@ body, p, a {
 .menu {
   position: absolute;
   width: 100%;
-  margin: 0 auto;
+  left: 0;
 }
 
 /*
